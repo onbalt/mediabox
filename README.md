@@ -1,9 +1,9 @@
 # MediaBox
-> Responsive Lightbox Plugin for Youtube and Vimeo and MP4 or HTML5 video format with Vanilla JS
+> Responsive Lightbox Plugin for Youtube and Vimeo and MP4 or HTML5 videos format with Vanilla JS
 
 ## Description
 
-Play Youtube, Vimeo and HTML5 Video from link with the mediabox class.
+Play Youtube, Vimeo and HTML5 Video from video links with the mediabox class.
 
 ## Demo
 
