@@ -1,9 +1,3 @@
-var Newplayer = null,
-    plyrInstance = null,
-    playerMarkup;
-
-/*****************************************/
-
 (function (root, factory) {
     "use strict";
     if (typeof define === 'function' && define.amd) {
@@ -158,10 +152,10 @@ var Newplayer = null,
 }));
 
 
-    // Remove param
-    function removeParam(url) {
-        var value = url.substring(url.lastIndexOf('/') + 1);
-        //get the part after before ?
-        value = value.split("?")[0];
-        return value;
-    }
+// Remove param
+function removeParam(url) {
+    var value = url.substring(url.lastIndexOf('/') + 1);
+    //get the part after before ?
+    value = value.split("?")[0];
+    return value;
+}
