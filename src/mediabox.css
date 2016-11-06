@@ -7,32 +7,20 @@
     left: 0;
     opacity: 0;
     z-index: 999;
-    -webkit-animation-duration: 0.5s;
-    animation-duration: 0.5s;
-    -webkit-animation-fill-mode: both;
-    animation-fill-mode: both;
-    -webkit-animation-name: mediabox;
-    animation-name: mediabox;
+
+    -webkit-transition: all .3s ease-in-out 0s;
+    -moz-transition: all .3s ease-in-out 0s;
+    -ms-transition: all .3s ease-in-out 0s;
+    transition: all .3s ease-in-out 0s;
+    
+    opacity: 0;
+    visibility: hidden;
+    
 }
 
-@-webkit-keyframes mediabox {
-    0% {
-        opacity: 0;
-    }
-
-    100% {
-        opacity: 1;
-    }
-}
-
-@keyframes mediabox {
-    0% {
-        opacity: 0;
-    }
-
-    100% {
-        opacity: 1;
-    }
+.mediabox-wrap#mediabox-show {
+    opacity: 1;  
+    visibility: visible;
 }
 
 .mediabox-content {
@@ -41,47 +29,44 @@
     margin: 0 auto;
     height: 100%;
     position: relative;
+    outline: none;
 }
 
-.mediabox-content iframe {
+/* REPLACE IF NO PLYR PLAYER */
+/*.mediabox-content iframe, .mediabox-content #plyrbox, .mediabox-content .plyr  {*/
+.mediabox-content iframe, .mediabox-content video {
     max-width: 100% !important;
     width: 100% !important;
     display: block !important;
-    height: 480px !important;
+/*    height: 480px !important;*/
+    height: 480px;
     border: none !important;
     position: absolute;
     top: 0;
     bottom: 0;
     margin: auto 0;
 }
+/* FOR PLYR */
+/*
+.mediabox-content .plyr--fullscreen-active{
+    height: auto!important;
+}
+.media-content .plyr__video-wrapper, .media-content .plyr__play-large, .media-content .plyr__controls {
+    z-index: 9999999999 !important;
+}
+*/
+
+/***************************/
 
 .mediabox-hide {
-    -webkit-animation-duration: 0.5s;
-    animation-duration: 0.5s;
-    -webkit-animation-fill-mode: both;
-    animation-fill-mode: both;
-    -webkit-animation-name: mediaboxhide;
-    animation-name: mediaboxhide;
-}
-
-@-webkit-keyframes mediaboxhide {
-    0% {
-        opacity: 1;
-    }
-
-    100% {
-        opacity: 0;
-    }
-}
-
-@keyframes mediaboxhide {
-    0% {
-        opacity: 1;
-    }
-
-    100% {
-        opacity: 0;
-    }
+    visibility: hidden;
+    opacity: 0;
+/*    transition: visibility 0s .3s, opacity .3s linear;*/
+    -webkit-transition: all .5s ease-in-out 0s;
+    -moz-transition: all .5s ease-in-out 0s;
+    -ms-transition: all .5s ease-in-out 0s;
+    transition: all .5s ease-in-out 0s;
+    
 }
 
 .mediabox-close {
