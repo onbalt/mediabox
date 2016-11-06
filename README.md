@@ -3,7 +3,7 @@
 
 ## Demo
 
-View [demo here](https://pinceladasdaweb.github.io/mediabox/example/)
+View [demo here](http://gencoweb.com/scripts/mediabox-master/demo.html)
 
 ## Install
 
