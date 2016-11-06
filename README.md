@@ -1,5 +1,9 @@
 # MediaBox
-> Responsive Lightbox Plugin for Youtube and Vimeo with Vanilla JS
+> Responsive Lightbox Plugin for Youtube and Vimeo and MP4 or HTML5 video format with Vanilla JS
+
+## Description
+
+Play Youtube, Vimeo and HTML5 Video from link with the mediabox class.
 
 ## Demo
 
@@ -15,7 +19,7 @@ npm install mediabox --save
 
 ## Download
 
-You can download the latest version or checkout all the releases [here](https://github.com/pinceladasdaweb/mediabox/releases).
+You can download the latest version or checkout all the releases [here](https://github.com/onigetoc/mediabox/releases).
 
 ## How to use?
 
@@ -45,6 +49,7 @@ Now add class to links, for example:
 ```html
 <a href="https://www.youtube.com/watch?v=3qyhgV0Zew0" class="mediabox">Youtube</a>
 <a href="https://vimeo.com/71495477" class="mediabox">Vimeo</a>
+<a href="http://podcast.rickygervais.com/rickyandpepe_twitter.mp4">Video MP4</a>
 ```
 
 ##Browser Support
