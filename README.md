@@ -49,7 +49,7 @@ Now add class to links, for example:
 ```html
 <a href="https://www.youtube.com/watch?v=3qyhgV0Zew0" class="mediabox">Youtube</a>
 <a href="https://vimeo.com/71495477" class="mediabox">Vimeo</a>
-<a href="http://podcast.rickygervais.com/rickyandpepe_twitter.mp4">Video MP4</a>
+<a href="http://podcast.rickygervais.com/rickyandpepe_twitter.mp4" class="mediabox">Video MP4</a>
 ```
 
 ##Browser Support
